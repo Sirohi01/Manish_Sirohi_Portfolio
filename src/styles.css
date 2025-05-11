@@ -1025,3 +1025,188 @@ footer::before {
 @keyframes spin {
     to { transform: rotate(360deg) translateZ(10px); }
 }
+
+/* Mobile-First Enhancements */
+@media (max-width: 768px) {
+    /* Improved touch targets */
+    .navbar a, .btn, .footer-links a {
+        min-width: 48px;
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Better mobile navigation */
+    .nav-links {
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+    }
+    
+    /* Optimized hero section for mobile */
+    .hero {
+        padding: 8rem 1rem;
+        min-height: 90vh;
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    }
+    
+    .hero h2 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+    
+    /* Improved button spacing */
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin: 0;
+    }
+    
+    /* Better card layout */
+    .card {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    /* Enhanced form inputs */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1.2rem;
+    }
+    
+    /* Improved footer layout */
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-links {
+        gap: 1rem;
+    }
+    
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+    
+    /* Prevent text overflow */
+    .section-title, .card h3 {
+        word-break: break-word;
+        hyphens: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small devices */
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+    
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .card {
+        padding: 2rem 1rem;
+    }
+    
+    .card-image {
+        height: 180px;
+    }
+    
+    /* Disable perspective effects on low-end devices */
+    @media (max-device-width: 480px) and (orientation: portrait) {
+        body {
+            perspective: none;
+        }
+        
+        .navbar, .card, .hero-content, 
+        .section-title, .footer-content {
+            transform-style: flat;
+            transform: none !important;
+        }
+        
+        .floating {
+            animation: none;
+        }
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Disable hover effects on touch devices */
+    .card:hover {
+        transform: none;
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .navbar a:hover, 
+    .btn:hover, 
+    .social-links a:hover {
+        transform: none;
+    }
+    
+    /* Increase tap targets */
+    .nav-links a {
+        padding: 1rem;
+    }
+}
+
+/* Portrait orientation specific adjustments */
+@media (max-width: 768px) and (orientation: portrait) {
+    .hero {
+        padding: 6rem 1rem;
+    }
+    
+    .section {
+        padding: 4rem 1rem;
+    }
+}
+
+/* Landscape orientation specific adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 120vh;
+    }
+    
+    .nav-links {
+        padding-top: 5rem;
+    }
+}
