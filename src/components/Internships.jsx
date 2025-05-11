@@ -7,7 +7,7 @@
         <div className="projects">
             <div className="card">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Mobile App Developer Intern</h3>
-            <p className="text-sm text-gray-500 mb-1">LeaveCode Technologies Pvt. Ltd. | Dec 2024 – Apr 2025</p>
+            <p className="text-sm text-gray-500 mb-1">LeaveCode Technologies Pvt. Ltd. | Sep 2024 – Apr 2025</p>
             <ul className="list-disc list-inside text-left text-gray-700 mt-2 space-y-1">
                 <li>Developed a cross-platform trash management app using React Native, Redux, and Firebase.</li>
                 <li>Implemented React Navigation and integrated Firestore for real-time updates.</li>

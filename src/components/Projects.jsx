@@ -4,6 +4,78 @@
     <section id="projects" className="section">
         <h2>Projects</h2>
         <div className="projects">
+
+        <div className="card">
+        <div className="card-header">
+            <h3>Sirohi Clothing - Premium Fashion E-Commerce</h3>
+            <span className="project-date">Current Project</span>
+            </div>
+            <div className="card-content">
+            <p className="project-description">
+                A high-end fashion e-commerce platform focused on minimalist, elegant designs with immersive user experience.
+            </p>
+            <div className="project-highlights">
+                <h4>Key Features:</h4>
+                <ul>
+                <li>Immersive Hero Section with Parallax effects & dynamic CTAs</li>
+                <li>Smart Product Grids with hover zooms and quick-add to cart</li>
+                <li>Dark/Light Mode theme switching</li>
+                <li>Optimized for conversions with reduced bounce rates</li>
+                <li>Accessibility focused with semantic HTML and ARIA labels</li>
+                </ul>
+            </div>
+            <div className="tech-stack">
+                <h4>Tech Stack:</h4>
+                <div className="tech-tags">
+                <span className="tech-tag">React.js, </span>
+                <span className="tech-tag">Redux, </span>
+                <span className="tech-tag">Firebase, </span>
+                <span className="tech-tag">CSS3, </span>
+                <span className="tech-tag">Responsive Design</span>
+                </div>
+            </div>    
+            </div>
+        </div>
+
+        {/* Hospital Management System */}
+        <div className="card">
+            <div className="card-header">
+            <h3>Hospital Management System</h3>
+            <span className="project-date">Current Project</span>
+            </div>
+            <div className="card-content">
+            <p className="project-description">
+                Comprehensive hospital management platform to streamline operations and improve patient care workflows.
+            </p>
+            <div className="project-highlights">
+                <h4>Completed Modules:</h4>
+                <div className="module-grid">
+                <span className="module-tag">Patient Management, </span>
+                <span className="module-tag">Doctor Management, </span>
+                <span className="module-tag">Staff Management, </span>
+                <span className="module-tag">Room Management, </span>
+                <span className="module-tag">Billing & Payment, </span>
+                <span className="module-tag">Appointment Scheduling, </span>
+                <span className="module-tag">Laboratory Management, </span>
+                <span className="module-tag">Pharmacy Management, </span>
+                <span className="module-tag">RFID Management, </span>
+                <span className="module-tag">Ambulance Tracking, </span>
+                <span className="module-tag">Blood Bank, </span>
+                <span className="module-tag">Dietary Management,</span>
+                </div>
+            </div>
+            <div className="tech-stack">
+                <h4>Tech Stack:</h4>
+                <div className="tech-tags">
+                <span className="tech-tag">React.js (Vite), </span>
+                <span className="tech-tag">CSS3, </span>
+                <span className="tech-tag">Flexbox/Grid, </span>
+                <span className="tech-tag">React Hooks, </span>
+                </div>
+            </div>
+            </div>
+        </div>
+
         
         <div className="card">
             <h3>Kalo_Dash</h3>

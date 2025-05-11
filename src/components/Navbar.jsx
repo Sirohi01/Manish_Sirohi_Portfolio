@@ -1,5 +1,5 @@
     import React, { useState } from 'react';
-    import resume from "../assets/MANISH.pdf";
+    import resume from "../assets/Manish__.pdf";
     import '../styles.css';
 
     const Navbar = () => {
@@ -11,7 +11,7 @@
     return (
         <nav className="navbar">
         <div className="navbar-header">
-            <h1>Manish Sirohi</h1>
+            <h1>Manish Kumar Sirohi</h1>
             <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle navigation">
             {isOpen ? '✕' : '☰'}
             </button>
