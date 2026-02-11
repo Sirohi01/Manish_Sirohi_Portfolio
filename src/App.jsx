@@ -12,12 +12,12 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Manish_Sirohi_Portfolio">
       <ScrollToTop />
       <div className="min-h-screen">
         <Navbar />
         <Routes>
-          <Route path="/Manish_Sirohi_Portfolio/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />

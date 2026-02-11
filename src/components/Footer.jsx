@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { name: 'Home', path: '/Manish_Sirohi_Portfolio/' },
+    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Skills', path: '/skills' },
     { name: 'Projects', path: '/projects' },
