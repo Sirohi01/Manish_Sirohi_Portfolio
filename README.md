@@ -1,12 +1,67 @@
-# React + Vite
+# Manish Sirohi - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern glassmorphism portfolio website built with React, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Modern Glassmorphism UI Design
+- 🌓 Dark/Light Theme Toggle
+- 📱 Fully Responsive
+- ⚡ Fast Performance with Vite
+- 🎭 Smooth Animations with Framer Motion
+- 🧭 Multi-page Navigation with React Router
+- 💼 Professional Portfolio Sections
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
+- React Icons
+- Vite
+
+## Getting Started
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview
+
+```bash
+npm run preview
+```
+
+## Sections
+
+- **Home** - Hero section with introduction
+- **About** - Professional background and education
+- **Skills** - Technical skills with progress bars
+- **Experience** - Work experience timeline
+- **Projects** - Portfolio projects showcase
+- **Contact** - Contact form and information
+
+## Contact
+
+- Email: manishsirohi0210@gmail.com
+- LinkedIn: [Manish Kumar Sirohi](https://www.linkedin.com/in/manish-kumar-sirohi-593268217)
+- GitHub: [Sirohi01](https://github.com/Sirohi01)
+
+## License
+
+MIT License - feel free to use this for your own portfolio!
