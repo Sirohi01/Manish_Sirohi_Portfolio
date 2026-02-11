@@ -18,11 +18,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/Manish_Sirohi_Portfolio/" element={<Home />} />
-          <Route path="/Manish_Sirohi_Portfolio/about" element={<About />} />
-          <Route path="/Manish_Sirohi_Portfolio/skills" element={<Skills />} />
-          <Route path="/Manish_Sirohi_Portfolio/experience" element={<Experience />} />
-          <Route path="/Manish_Sirohi_Portfolio/projects" element={<Projects />} />
-          <Route path="/Manish_Sirohi_Portfolio/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
