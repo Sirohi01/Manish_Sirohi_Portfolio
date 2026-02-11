@@ -141,7 +141,7 @@ const Projects = () => {
                     >
                       <FiGithub className="w-6 h-6" />
                     </a>
-                    {project.live && (
+                    {/* {project.live && (
                       <a
                         href={project.live}
                         target="_blank"
@@ -151,7 +151,7 @@ const Projects = () => {
                       >
                         <FiArrowUpRight className="w-6 h-6" />
                       </a>
-                    )}
+                    )} */}
                   </div>
                   <div className="hidden md:block mt-auto text-8xl font-bold text-white/5 pointer-events-none select-none">
                     {String(idx + 1).padStart(2, '0')}
