@@ -89,18 +89,18 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: idx * 0.1 }}
-              className={`relative grid lg:grid-cols-2 gap-8 lg:gap-16 items-start group ${idx % 2 === 0 ? 'text-left' : 'text-left lg:text-right lg:flex-row-reverse'
+              className={`relative grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ${idx % 2 === 0 ? 'lg:text-right' : 'lg:text-left'
                 }`}
             >
               {/* Timeline Dot */}
-              <div className="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-slate-950 border-2 border-cyan-500 z-10 -translate-x-[7px] lg:-translate-x-1/2 mt-1.5 shadow-[0_0_15px_rgba(6,182,212,0.5)] group-hover:scale-125 transition-transform duration-300" />
-
-              {/* Spacer for alternating layout */}
-              <div className={idx % 2 === 0 ? 'hidden lg:block lg:col-start-2' : 'hidden lg:block lg:col-start-1 lg:row-start-1'} />
+              <div className="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-slate-950 border-2 border-cyan-500 z-10 -translate-x-[7px] lg:-translate-x-1/2 mt-1.5 shadow-[0_0_15px_rgba(6,182,212,0.5)]" />
 
               {/* Content Card */}
-              <div className={`pl-12 lg:pl-0 ${idx % 2 === 0 ? 'lg:pr-8' : 'lg:pl-8 lg:col-start-2'}`}>
-                <div className={`p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-white/10 backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-purple-500/10 ${idx % 2 !== 0 ? 'lg:items-end lg:flex lg:flex-col' : ''}`}>
+              <div className={`pl-12 lg:pl-0 ${idx % 2 === 0
+                  ? 'lg:col-start-1 lg:pr-12'
+                  : 'lg:col-start-2 lg:pl-12'
+                }`}>
+                <div className="p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-white/10 backdrop-blur-sm transition-all duration-300 group hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 text-left">
 
                   <div className="flex flex-wrap items-center gap-3 mb-2 text-sm text-cyan-400 font-semibold uppercase tracking-wider">
                     <span>{exp.period}</span>
@@ -111,6 +111,7 @@ const Experience = () => {
                   <h3 className="text-2xl font-heading font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
                     {exp.role}
                   </h3>
+
                   <div className="text-lg text-gray-300 font-medium mb-4 flex items-center gap-2">
                     {exp.company}
                     <FiArrowUpRight className="opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400" />
@@ -120,16 +121,16 @@ const Experience = () => {
                     {exp.description}
                   </p>
 
-                  <div className="space-y-3 mb-6">
+                  <ul className="space-y-3 mb-6">
                     {exp.achievements.map((item, i) => (
-                      <div key={i} className={`flex items-start gap-3 text-gray-400 ${idx % 2 !== 0 ? 'lg:flex-row-reverse lg:text-right' : ''}`}>
-                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0" />
+                      <li key={i} className="flex items-start gap-3 text-gray-400">
+                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0" />
                         <span>{item}</span>
-                      </div>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
 
-                  <div className={`flex flex-wrap gap-2 ${idx % 2 !== 0 ? 'lg:justify-end' : ''}`}>
+                  <div className="flex flex-wrap gap-2">
                     {exp.stack.map((tech, i) => (
                       <span key={i} className="px-3 py-1 text-xs font-medium rounded-full bg-white/5 border border-white/10 text-gray-300 group-hover:border-white/20 transition-colors">
                         {tech}
