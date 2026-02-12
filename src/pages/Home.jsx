@@ -122,8 +122,8 @@ const Home = () => {
                 View Projects <FiArrowRight />
               </Link>
               <a
-                href="/Manish_Sirohi_Resume.pdf"
-                download
+                href="/Manish_Sirohi_Portfolio/manish_kumar_sirohi (2).pdf"
+                download="Manish_Sirohi_Resume.pdf"
                 className="px-8 py-4 rounded-full border border-white/20 hover:bg-white/10 transition-colors duration-300 flex items-center gap-2 backdrop-blur-sm"
               >
                 Download CV <FiDownload />
